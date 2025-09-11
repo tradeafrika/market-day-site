@@ -9,13 +9,23 @@ export default function Footer() {
         <span className="font-bold text-2xl sm:text-3xl">TradeAfrika</span>
 
         <div className="flex space-x-6 text-white">
-          <Link href="/" aria-label="Instagram">
+          <Link href="https://www.instagram.com/tradeafrikamarketplace?igsh=MXVteGNyNXVqNGNkaA%3D%3d&utm_source=qr" aria-label="Instagram">
             <Instagram />
           </Link>
-          <Link href="/" aria-label="Twitter">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://x.com/trade_afrika"
+            aria-label="Twitter"
+          >
             <Twitter />
           </Link>
-          <Link href="/" aria-label="LinkedIn">
+          <Link
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://ug.linkedin.com/company/afritrade-b2b-digital-marketplace"
+            aria-label="LinkedIn"
+          >
             <Linkedin />
           </Link>
         </div>

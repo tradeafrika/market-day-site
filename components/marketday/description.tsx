@@ -1,46 +1,67 @@
-import { Gift, Users } from "lucide-react";
 import Image from "next/image";
 import lady1 from "@/assets/lady1.jpg";
 
 export default function ExperienceDescription() {
   return (
-    <div id="features" className=" bg-neutral-100 text-[#0F2A19] h-[850px] p-8">
-      <div className="w-full  h-[80px] mb-12 flex items-center mt-8 justify-center text-5xl text-center font-bold">
-        <div className="w-[80%]">
+    <div
+      id="features"
+      className="bg-neutral-100 text-[#0F2A19] px-6 md:px-12 py-16"
+    >
+      {/* Heading */}
+      <div className="w-full mb-12 flex items-center justify-center text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold max-w-4xl leading-tight">
           More Than a Market: An Unforgettable Market Experience
-        </div>
+        </h2>
       </div>
 
-      <main className="grid grid-cols-2 mt-[90px] m-[60px] gap-14">
+      {/* Content */}
+      <main className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+        {/* Item 1 */}
         <div className="w-full">
-          <div className="w-full h-[300px]">
-           <img src={lady1.src} alt="ff" className="w-full h-[300px] object-center object-cover" />
+          <div className="w-full h-[250px] sm:h-[300px]">
+            <Image
+              src={lady1}
+              alt="Corporate networking"
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
-          <div className="mt-8 space-y-4">
-            <span>#Networking</span>
-            <h2 className="font-bold text-4xl">Corporate Lounge</h2>
-
-            <p className="mt-6">
+          <div className="mt-6 space-y-4">
+            <span className="text-sm font-medium text-[#038149]">
+              #Networking
+            </span>
+            <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl">
+              Corporate Lounge
+            </h3>
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed">
               Our dedicated corporate lounge provides the perfect environment
               for B2B networking. We're curating a special vendor mix to
-              facilitate connections and opportunites for corporate buyers and
-              partners
+              facilitate connections and opportunities for corporate buyers and
+              partners.
             </p>
           </div>
         </div>
-        <div className="w-full">
-          <div className=" w-full h-[300px]">
-           <img src={lady1.src} alt="ff" className="w-full h-[300px] object-center object-cover" />
 
+        {/* Item 2 */}
+        <div className="w-full">
+          <div className="w-full h-[250px] sm:h-[300px]">
+            <Image
+              src={lady1}
+              alt="Engaging experiences"
+              className="w-full h-full object-cover rounded-lg"
+            />
           </div>
-          <div className="mt-8 space-y-4">
-            <span>#Experiences</span>
-            <h2 className="font-bold text-4xl">Engaging Experiences</h2>
-            <p className="mt-6">
+          <div className="mt-6 space-y-4">
+            <span className="text-sm font-medium text-[#038149]">
+              #Experiences
+            </span>
+            <h3 className="font-bold text-2xl sm:text-3xl md:text-4xl">
+              Engaging Experiences
+            </h3>
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed">
               Get ready to be entertained and inspired! Our event will feature
               exciting experiences, including fashion showcases, live tech
               demos, product tastings, live music, and illuminating SME
-              spotlight pitches
+              spotlight pitches.
             </p>
           </div>
         </div>

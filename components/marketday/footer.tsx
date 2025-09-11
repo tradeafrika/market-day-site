@@ -1,27 +1,37 @@
-import { Instagram, Linkedin, Twitter } from 'lucide-react'
-import Link from 'next/link'
+import { Instagram, Linkedin, Twitter } from "lucide-react";
+import Link from "next/link";
 
 export default function Footer() {
-    return (
-        <div className=' bg-[#038149] text-white '>
-            <div className="flex items-center justify-between pt-12  m-16">
-                <span className='font-bold text-3xl '>TradeAfrika</span>
-                <div className="text-white flex space-x-5 items-center justify-center">
-                    <Link href={"/"}>
+  return (
+    <footer className="bg-[#038149] text-white">
+      {/* Top */}
+      <div className="flex flex-col h-[] md:flex-row items-center justify-between px-6 md:px-16 py-10 gap-6">
+        <span className="font-bold text-2xl sm:text-3xl">TradeAfrika</span>
 
-                    <Instagram />
-                    </Link>
-                    <Twitter />
-                    <Linkedin />
-                </div>
-            </div>
-            <div className='w-full flex items-center justify-center'>
-                <div className="border border-r-transparent border-l-transparent border-b-transparent  border-t-white w-[90%] p-12 flex items-center justify-center">
-                    <span className='font-medium text-sm'>
-                        &copy; 2025 TradeAfrika. All rights Reserved. <a href="/">Privacy Policy</a>
-                    </span>
-                </div>
-            </div>
+        <div className="flex space-x-6 text-white">
+          <Link href="/" aria-label="Instagram">
+            <Instagram />
+          </Link>
+          <Link href="/" aria-label="Twitter">
+            <Twitter />
+          </Link>
+          <Link href="/" aria-label="LinkedIn">
+            <Linkedin />
+          </Link>
         </div>
-    )
+      </div>
+
+      {/* Divider + Bottom */}
+      <div className="flex items-center justify-center w-full">
+        <div className="flex items-center w-[80%] border-t border-white/40 justify-center py-6 px-4 text-center">
+          <span className="font-medium text-xs sm:text-sm">
+            &copy; 2025 TradeAfrika. All rights reserved.{" "}
+            <a href="/" className="underline hover:text-gray-200">
+              Privacy Policy
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  );
 }

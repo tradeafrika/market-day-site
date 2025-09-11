@@ -11,50 +11,53 @@ export default function Fold() {
   const [currentParticipants, setParticipants] = useState<string>("20+");
 
   return (
-    <div className="w-full h-[750px] text-[#0F2A19] bg-[#F8FDF9] flex items-center flex-col ">
-      <div className="w-[70%] mt-14 space-y-12  text-center flex flex-col items-center justify-center">
-        <span className="font-bold justify-center flex h-[30px] space-x-8 items-center">
+    <div className="w-full min-h-screen text-[#0F2A19] bg-[#F8FDF9] flex items-center flex-col px-4">
+      <div className="w-full md:w-[70%] mt-14 space-y-8 text-center flex flex-col items-center">
+        {/* CONNECT DISCOVER GROW */}
+        <span className="font-bold flex flex-wrap justify-center gap-4 items-center text-sm sm:text-base">
           <span>CONNECT</span>
-          <span className="h-full flex items-center justify-center">
-            <Dot />
-          </span>
+          <Dot />
           <span>DISCOVER</span>
-          <span className="h-full flex items-center justify-center">
-            <Dot />
-          </span>
+          <Dot />
           <span>GROW</span>
         </span>
-        <h2 className="mt-[18px] text-6xl font-bold">
+
+        {/* Heading */}
+        <h2 className="mt-4 text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
           <p>TradeAfrika Market Day:</p>
           <p>Your Marketplace Awaits!</p>
         </h2>
-        <h3 className="text-center mt-[24px] w-[80%]">
+
+        {/* Subheading */}
+        <h3 className="mt-4 max-w-2xl text-sm sm:text-base md:text-lg text-gray-700">
           Join us for the TradeAfrika Market Day, a vibrant event celebrating
           and showcasing the rich diversity of African businesses and products.
           Whether you're a seasoned entrepreneur looking to expand your reach or
           a curious shopper eager to discover unique treasures, this is the
-          place to be
+          place to be.
         </h3>
 
-        <div className="flex space-x-7 mt-8">
+        {/* Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 mt-6">
           <Link
             target="_blank"
             rel="noopener noreferrer"
             href={formLink}
-            className="flex  font-medium rounded-lg  text-white bg-[#038149]  justify-center items-center w-[150px] h-[50px]"
+            className="flex font-medium rounded-lg text-white bg-[#038149] hover:bg-transparent hover:text-[#038149] transition  border border-[#038149]  justify-center items-center px-6 py-3"
           >
             Register
           </Link>
           <Link
             href="https://wa.me/256726444638"
             target="_blank"
-            className="flex rounded-lg font-medium   border border-[#038149] bg-[#b7f0d6]  text-[#038149] justify-center items-center w-[150px] h-[50px]"
+            className="flex rounded-lg font-medium hover:bg-transparent transition border border-[#038149] bg-[#b7f0d6] text-[#038149] justify-center items-center px-6 py-3"
           >
             Contact us
           </Link>
         </div>
 
-        <div className="flex space-x-4 mt-8">
+        {/* Countdown + Participants */}
+        <div className="flex flex-col sm:flex-row gap-4 mt-8 items-center">
           <Countdown />
           <Participant currentValue={currentParticipants} />
         </div>

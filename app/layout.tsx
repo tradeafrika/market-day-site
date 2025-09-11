@@ -16,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${roboto.className} text-[#0F2A19] antialiased`}>{children}</body>
+      <body className={` ${roboto.className} text-[#0F2A19] antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

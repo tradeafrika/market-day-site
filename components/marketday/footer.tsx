@@ -23,7 +23,7 @@ export default function Footer() {
           <Link
             target="_blank"
             rel="noopener noreferrer"
-            href="https://ug.linkedin.com/company/afritrade-b2b-digital-marketplace"
+            href="https://linkedin.com/company/afritrade-b2b-digital-marketplace"
             aria-label="LinkedIn"
           >
             <Linkedin />

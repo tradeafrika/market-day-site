@@ -13,7 +13,7 @@ export default function MarketDay() {
       <TitlebarMarketDay />
       <main className="">
         <Fold />
-        <Partners />
+        {/* <Partners /> */}
         <AttendComponent />
         <BuyersTake />
         <RegisterItem />

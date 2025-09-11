@@ -9,7 +9,7 @@ export default function Partners() {
     >
       {/* Title */}
       <div className="font-bold text-center md:text-left">
-        Used by the world's leading companies
+        Our 
       </div>
 
       {/* Logos */}

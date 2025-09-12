@@ -5,7 +5,7 @@ export default function VendorBuyer() {
   return (
     <div className="flex flex-col sm:flex-row gap-4 ">
       <div>
-        <span className="font-bold">A a Vendor </span>
+        <span className="font-bold">As a Vendor </span>
         <Link
           target="_blank"
           rel="noopener noreferrer"

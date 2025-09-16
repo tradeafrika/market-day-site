@@ -1,5 +1,5 @@
 import Image from "next/image";
-import lady1 from "@/assets/lady1.jpg";
+import placeholder2 from "@/assets/placeholder-2.png"
 
 export default function BuyersTake() {
   return (
@@ -8,7 +8,7 @@ export default function BuyersTake() {
         {/* Image */}
         <div className="flex justify-center order-1 md:order-none">
           <div className="w-full max-w-sm">
-            <Image src={lady1} alt="Buyer browsing" className="rounded-xl object-cover" />
+            <Image src={placeholder2} alt="Buyer browsing" className="rounded-xl object-cover" />
           </div>
         </div>
 

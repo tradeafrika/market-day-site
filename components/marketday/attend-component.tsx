@@ -1,5 +1,5 @@
 import Image from "next/image";
-import lady1 from "@/assets/lady1.jpg";
+import placeholder1 from "@/assets/placholder-1.png"
 
 export default function AttendComponent() {
   return (
@@ -34,7 +34,7 @@ export default function AttendComponent() {
         {/* Image */}
         <div className="flex justify-center">
           <div className="w-full max-w-sm">
-            <Image src={lady1} alt="Vendor showcasing" className="rounded-xl object-cover" />
+            <Image src={placeholder1} alt="Vendor showcasing" className="rounded-xl object-cover" />
           </div>
         </div>
       </main>

@@ -22,7 +22,7 @@ export default function RegisterItem() {
           href={formLink}
           className="inline-flex mt-4 hover:text-white hover:bg-orange-400  rounded-lg bg-white text-[#038149] font-medium justify-center items-center px-6 py-3"
         >
-          Register
+          Book Your Stall Now
         </Link>
       </div>
     </div>

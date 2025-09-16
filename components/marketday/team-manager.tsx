@@ -1,5 +1,3 @@
-import Image from "next/image";
-import lady1 from "@/assets/lady1.jpg";
 import TeamItem from "./team-item";
 
 interface ITeaMemeber {
@@ -53,7 +51,6 @@ const teamMembers: ITeaMemeber[] = [
     mailURL: "martinwandera@gmail.com",
     linkedInURL: "",
   },
-
   {
     imageSrc: "/clinton.png",
     name: "Clinton Murungi",
@@ -61,7 +58,6 @@ const teamMembers: ITeaMemeber[] = [
     linkedInURL: "https://www.linkedin.com/in/murungi-clinton05b8390160",
     mailURL: "clintonmurungi@gmail.com",
   },
-
   {
     imageSrc: "https://placehold.co/400x225?text=P",
     name: "Precious Arinda",
@@ -69,7 +65,6 @@ const teamMembers: ITeaMemeber[] = [
     mailURL: "",
     linkedInURL: "",
   },
-  // Add more team members as needed
 ];
 
 export default function TeamManager() {
@@ -94,7 +89,8 @@ export default function TeamManager() {
         </p>
       </div>
 
-      <div className="grid grid-cols-4 gap-10">
+      {/* Responsive Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-10">
         {teamMembers.map((member, index) => (
           <TeamItem
             key={index}

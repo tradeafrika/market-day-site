@@ -13,10 +13,10 @@ export default function Footer() {
           <span>National ICT Hub P.O. BOX 7817, Kampala,Uganda</span>
         </div>
         <div className="flex flex-col">
-          <h2 className="font-bold mb-3">Contact:</h2>
+          {/* <h2 className="font-bold mb-3">Contact:</h2>
           <Link href={`tel:+256-763-157-289`} className="underline">
             +256-763-157-289
-          </Link>
+          </Link> */}
           <Link href={`mailto:tradeafrika0@gmail.com`} className="underline">
             tradeafrika0@gmail.com
           </Link>
